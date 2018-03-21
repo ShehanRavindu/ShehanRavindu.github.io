@@ -93,11 +93,30 @@ a.button5:hover{
 	color:#FFFFFF;
 	border-color:#FFFFFF;
 }
-@media all and (max-width:30em){
-a.button5{
+
+
+@media screen and (min-width: 500px) {
+	a.button5{
 	display:block;
 	margin:0.4em auto;
 	}
+
+  .container{width: 100%; max-width: 1080px; margin: 0 auto;}
+  .container .row{width:100%; float:left; clear:both;}
+  .container .col{float: left; margin: 0 0 1em; padding-right: .1em; padding-left: .1em;}
+  .container .col.one { width: 8.33%; }
+  .container .col.two { width: 16.66%; }
+  .container .col.three { width: 24.99%; }
+  .container .col.four { width: 50%; }
+  .container .col.five { width: 41.65%; }
+  .container .col.six { width: 49.98%; }
+  .container .col.seven { width: 58.31%; }
+  .container .col.eight { width: 66.64%; }
+  .container .col.nine { width: 74.97%; }
+  .container .col.ten { width: 83.3%; }
+  .container .col.eleven { width: 91.65%; }
+  .container .col.tweleve { width: 100%; }
+}
 }
   </style>
 
@@ -114,9 +133,12 @@ a.button5{
 				</div>
 				<div class="col-md-8 header-right">
 				<b>
-					<div class="col-md-12 header-right">
-							
-							<a href="cv/Shehan_cv.pdf" class="button5" style="background-color:white;position: absolute; right: 0;color:red" download>DOWNLOAD RESUME</a>
+					<div class="container">
+						<div class="row">
+							<div class="col twelve">
+								<a href="cv/Shehan_cv.pdf" class="button5" style="background-color:white;position: absolute; right: 0;color:red" download>Download my Resume</a>
+							</div>
+						</div>
 							<!-- <a href="cv/Shehan_cv.pdf" download><button type="button" style="position: absolute; right: 0;"><p align="right" style="font-size:130%;color:red">Download my Resume</p></a> -->
 					</div>
 					<h2>Hello</h2>
@@ -132,19 +154,19 @@ a.button5{
 						</li>
 						<li>
 							<ul class="address-text">
-								<li><b>Phone </b></li>
+								<li><b>PHONE </b></li>
 								<li><b style="color:lightblue">+94711214884</b></li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
-								<li><b>Address </b></li>
+								<li><b>ADDRESS </b></li>
 								<li><b style="color:lightblue">172, Seeduwa North, Seeduwa, Sri Lanka.</b></li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
-								<li><b>Email </b></li>
+								<li><b>E-MAIL </b></li>
 								<li><b><a href="ktsravindu@gmail.com" style="color:lightblue"> ktsravindu@gmail.com</a></b></li>
 							</ul>
 						</li>
