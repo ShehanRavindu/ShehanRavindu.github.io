@@ -72,6 +72,33 @@ $(window).load(function() {
 	z-index: 9999;
 	background: url(images/load3.gif) center no-repeat #fff;
 }
+a.button5{
+	display:inline-block;
+	padding:0.46em 1.6em;
+	border:0.1em solid #000000;
+	margin:0 0.2em 0.2em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:500;
+	color:#000000;
+	text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+	background-color:lightblue;
+	text-align:center;
+	transition: all 0.15s;
+}
+a.button5:hover{
+	text-shadow: 0 0 2em rgba(255,255,255,1);
+	color:#FFFFFF;
+	border-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+a.button5{
+	display:block;
+	margin:0.4em auto;
+	}
+}
   </style>
 
 
@@ -83,15 +110,16 @@ $(window).load(function() {
 		<div class="banner-info">
 			<div class="container">
 				<div class="col-md-4 header-left">
-					<img src="images/me.jpg" alt="" height="470"/>
+					<img src="images/me.jpg" alt=""/>
 				</div>
 				<div class="col-md-8 header-right">
 				<b>
-					<h2>Hello</h2>
-					
 					<div class="col-md-12 header-right">
-							<a href="cv/Shehan_cv.pdf" download><button type="button" style="position: absolute; right: 0;"><p align="right" style="font-size:130%;color:red">Download my Resume</p></a>
+							
+							<a href="cv/Shehan_cv.pdf" class="button5" style="background-color:white;position: absolute; right: 0;color:red" download>Download my Resume</a>
+							<!-- <a href="cv/Shehan_cv.pdf" download><button type="button" style="position: absolute; right: 0;"><p align="right" style="font-size:130%;color:red">Download my Resume</p></a> -->
 					</div>
+					<h2>Hello</h2>
 					
 					<h1>I'm Shehan Ravindu </h1>
 					<h6><b style="font-size:120%;color:lightblue">Software and Web Developer</b></h6>
@@ -136,12 +164,6 @@ $(window).load(function() {
 							<ul class="address-text">
 								<li><b>Facebook </b></li>
 								<li><b><a href="https://www.facebook.com/shehan.ravindu.104" style="color:lightblue">www.facbook.com/shehanravindu</a></b></li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>Stack Overflow </b></li>
-								<li><b><a href="https://stackoverflow.com/users/5486470/s-ravi" style="color:lightblue">www.stackoverflow.com/shehanravindu</a></b></li>
 							</ul>
 						</li>
 						
