@@ -41,6 +41,23 @@ Linkedin: https://www.linkedin.com/in/shehanravindu/
 		});
 </script>
 <!--//end-smooth-scrolling-->
+
+<style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+	  right: 0%;
+      width: 100%;
+      z-index: 9999 !important;
+	  background: #008B8B;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  </style>
+
+
 </head>
 <body>
 	<!--banner-->
@@ -48,7 +65,7 @@ Linkedin: https://www.linkedin.com/in/shehanravindu/
 		<div class="banner-info">
 			<div class="container">
 				<div class="col-md-4 header-left">
-					<img src="images/me.jpg" alt=""/>
+					<img src="images/me.jpg" alt="" height="470"/>
 				</div>
 				<div class="col-md-8 header-right">
 				<b>
@@ -103,6 +120,12 @@ Linkedin: https://www.linkedin.com/in/shehanravindu/
 								<li><b><a href="https://www.facebook.com/shehan.ravindu.104" style="color:lightblue">www.facbook.com/shehanravindu</a></b></li>
 							</ul>
 						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>Stack Overflow </b></li>
+								<li><b><a href="https://stackoverflow.com/users/5486470/s-ravi" style="color:lightblue">www.stackoverflow.com/shehanravindu</a></b></li>
+							</ul>
+						</li>
 						
 					</ul>
 				</b>	
@@ -122,11 +145,12 @@ Linkedin: https://www.linkedin.com/in/shehanravindu/
 				</button>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			
+			<div class="collapse navbar-collapse" data-spy="affix" data-offset-top="197">
 				<div class="menu">
 					<ul class="nav navbar">
 						<li style="font-size:120%"><a href="#about" class="scroll">About</a></li>
-						<!--<li><a href="#work" class="scroll">Experience</a></li> -->
 						<li style="font-size:120%"><a href="#education" class="scroll">Education</a></li>
 						<li style="font-size:120%"><a href="#skills" class="scroll">Skills</a></li>
 						<li style="font-size:120%"><a href="#projects" class="scroll">My Projects</a></li>
@@ -135,6 +159,7 @@ Linkedin: https://www.linkedin.com/in/shehanravindu/
 					</ul>
 					<div class="clearfix"> </div>
 				</div>
+			
 			</div>
 		</div>
 	</div>	
